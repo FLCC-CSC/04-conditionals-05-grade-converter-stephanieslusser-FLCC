@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Stephanie Slusser
+# DATE: 10/04/2025
+# BRIEF DESCRIPTION: Grade converter
 
 
 
@@ -16,21 +16,22 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
 print('===== Grade Converter =====')
+grade = int(input('Enter a numerical grade (1-100): '))
 
-percent = int(input('Enter a numerical grade (1-100): '))
-
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
-else:
+if grade < 65:
     print('F')
+elif 65 <= grade < 70:
+    print ('D')
+elif 70 <= grade < 80:
+    print ('C')
+elif 80 <= grade < 90:
+   print ('B')
+elif 90 <= grade <= 100:
+   print ('A')
+elif 100 < grade:
+   print ('A+')
+else:
+   print('F')
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -84,7 +85,7 @@ D
 
 1. What is something you would tell a future student to be careful about when
    doing this lab?
-
+Pay attention to when numbers are to be included in a grade tier. [ and ( look the same if you aren't looking carefully.
 
 
 
